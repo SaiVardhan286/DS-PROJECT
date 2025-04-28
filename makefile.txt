@@ -1,0 +1,7 @@
+all: main
+
+main: main.cpp graph.cpp maxflow.cpp algorithm1.cpp algorithm4.cpp
+	g++ -std=c++11 -o main main.cpp graph.cpp maxflow.cpp algorithm1.cpp algorithm4.cpp
+
+clean:
+	rm -f main
